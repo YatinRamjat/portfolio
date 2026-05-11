@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yatin Ramjat Prabhu | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container">
+        <div class="nav-inner">
+          <a class="logo" href="index.html">LOGO</a>
+
+          <nav class="nav-links" aria-label="Primary navigation">
+            <a data-nav href="index.html">Home</a>
+            <a data-nav href="services.html">Services</a>
+            <a data-nav href="about.html">About Me</a>
+            <a data-nav href="portfolio.html">Portfolio</a>
+            <a data-nav href="contact.html">Contact Me</a>
+          </nav>
+
+          <div class="nav-right">
+            <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" data-hamburger>
+              <span class="hamburger-lines" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </span>
+            </button>
+
+            <a href="contact.html" class="btn btn-primary">Hire Me</a>
+          </div>
+        </div>
+
+        <div class="mobile-panel" data-mobile-panel>
+          <div class="mobile-links">
+            <a data-nav href="index.html">Home</a>
+            <a data-nav href="services.html">Services</a>
+            <a data-nav href="about.html">About Me</a>
+            <a data-nav href="portfolio.html">Portfolio</a>
+            <a data-nav href="contact.html">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container" data-portfolio>
+        <header class="reveal">
+          <h1 class="page-title accent">Portfolio</h1>
+          <p class="page-subtitle">A look at what I've been building</p>
+        </header>
+
+        <div class="filters reveal" role="tablist" aria-label="Project filters">
+          <button class="filter-btn active" type="button" data-filter="all">All</button>
+          <button class="filter-btn" type="button" data-filter="web design">Web Design</button>
+          <button class="filter-btn" type="button" data-filter="development">Development</button>
+        </div>
+
+        <section class="grid projects" aria-label="Project cards">
+          <article class="card pad lift reveal" data-project="development">
+            <div class="thumb" style="background-image: url('assets/projects/cafe_thumb.png');" aria-hidden="true"></div>
+            <div style="margin-top:12px;">
+              <h3 style="margin:0;">Chai & Chowk</h3>
+              <p>A premium restaurant website for a Pune-based cafe, featuring a dynamic menu system and warm editorial aesthetic.</p>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="projects/cafe/index.html" target="_blank">View Project</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card pad lift reveal" data-project="development">
+            <div class="thumb" style="background-image: url('assets/projects/ecommerce_thumb.png');" aria-hidden="true"></div>
+            <div style="margin-top:12px;">
+              <h3 style="margin:0;">ThreadsWala</h3>
+              <p>A sophisticated e-commerce platform for a clothing brand, optimized for performance and seamless shopping experience.</p>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="projects/ecommerce/index.html" target="_blank">View Project</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card pad lift reveal" data-project="development">
+            <div class="thumb" style="background-image: url('assets/projects/gym_thumb.png');" aria-hidden="true"></div>
+            <div style="margin-top:12px;">
+              <h3 style="margin:0;">IronPeak Fitness</h3>
+              <p>A high-performance gym management site with integrated payment processing and dynamic membership management.</p>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="projects/gym/index.html" target="_blank">View Project</a>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© <span id="year"></span> Yatin Ramjat Prabhu. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+

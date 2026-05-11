@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yatin Ramjat Prabhu | About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container">
+        <div class="nav-inner">
+          <a class="logo" href="index.html">LOGO</a>
+
+          <nav class="nav-links" aria-label="Primary navigation">
+            <a data-nav href="index.html">Home</a>
+            <a data-nav href="services.html">Services</a>
+            <a data-nav href="about.html">About Me</a>
+            <a data-nav href="portfolio.html">Portfolio</a>
+            <a data-nav href="contact.html">Contact Me</a>
+          </nav>
+
+          <div class="nav-right">
+            <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" data-hamburger>
+              <span class="hamburger-lines" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </span>
+            </button>
+
+            <a href="contact.html" class="btn btn-primary">Hire Me</a>
+          </div>
+        </div>
+
+        <div class="mobile-panel" data-mobile-panel>
+          <div class="mobile-links">
+            <a data-nav href="index.html">Home</a>
+            <a data-nav href="services.html">Services</a>
+            <a data-nav href="about.html">About Me</a>
+            <a data-nav href="portfolio.html">Portfolio</a>
+            <a data-nav href="contact.html">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container">
+        <header class="reveal">
+          <h1 class="page-title accent">About Me</h1>
+          <p class="page-subtitle">A bit about who I am and what I do</p>
+        </header>
+
+        <section class="about">
+          <div class="reveal">
+            <div class="circle" aria-label="About photo circle">
+              <!-- ADD YOUR PHOTO HERE: replace 'about-photo.jpg' with your image -->
+              <img src="assets/about-photo.jpg" alt="Yatin Ramjat Prabhu" class="hero-photo" />
+            </div>
+          </div>
+
+          <div class="reveal">
+            <div class="card pad">
+              <h2 style="margin:0 0 10px; font-size:22px;">Hi, I'm <span class="accent">Yatin Ramjat Prabhu</span></h2>
+              <div class="muted" style="font-size:14px; margin-bottom:12px;">
+                Age: <span style="color:rgba(255,255,255,.92); font-weight:600;">17</span> &middot;
+                Born <span style="color:rgba(255,255,255,.92); font-weight:600;">October 4, 2008</span>
+              </div>
+              <p style="margin:0; color:var(--muted); line-height:1.8;">
+                I'm a college student stepping into the world of freelancing. I build clean, modern websites and I'm actively
+                looking for my first clients.
+              </p>
+
+              <div style="margin-top:18px;">
+                <h3 style="margin:0 0 10px; font-size:16px;">Skills</h3>
+
+                <div class="skill">
+                  <div class="skill-row"><span>HTML/CSS</span><span>80%</span></div>
+                  <div class="bar"><div class="bar-fill" data-level="80%"></div></div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-row"><span>JavaScript</span><span>65%</span></div>
+                  <div class="bar"><div class="bar-fill" data-level="65%"></div></div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-row"><span>UI Design</span><span>70%</span></div>
+                  <div class="bar"><div class="bar-fill" data-level="70%"></div></div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-row"><span>Responsiveness</span><span>75%</span></div>
+                  <div class="bar"><div class="bar-fill" data-level="75%"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© <span id="year"></span> Yatin Ramjat Prabhu. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+

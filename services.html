@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yatin Ramjat Prabhu | Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container">
+        <div class="nav-inner">
+          <a class="logo" href="index.html">LOGO</a>
+
+          <nav class="nav-links" aria-label="Primary navigation">
+            <a data-nav href="index.html">Home</a>
+            <a data-nav href="services.html">Services</a>
+            <a data-nav href="about.html">About Me</a>
+            <a data-nav href="portfolio.html">Portfolio</a>
+            <a data-nav href="contact.html">Contact Me</a>
+          </nav>
+
+          <div class="nav-right">
+            <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" data-hamburger>
+              <span class="hamburger-lines" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </span>
+            </button>
+
+            <a href="contact.html" class="btn btn-primary">Hire Me</a>
+          </div>
+        </div>
+
+        <div class="mobile-panel" data-mobile-panel>
+          <div class="mobile-links">
+            <a data-nav href="index.html">Home</a>
+            <a data-nav href="services.html">Services</a>
+            <a data-nav href="about.html">About Me</a>
+            <a data-nav href="portfolio.html">Portfolio</a>
+            <a data-nav href="contact.html">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container">
+        <header class="reveal">
+          <h1 class="page-title accent">My Services</h1>
+          <p class="page-subtitle">What I can do for you</p>
+        </header>
+
+        <section class="grid services-grid">
+          <article class="card pad lift reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 4h16v10H4V4Zm2 2v6h12V6H6Zm-2 12h16v2H4v-2Z"/>
+              </svg>
+            </div>
+            <h3>Web Design</h3>
+            <p>Clean, modern UI/UX designs tailored to your brand.</p>
+          </article>
+
+          <article class="card pad lift reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 6h16v12H4V6Zm2 2v8h12V8H6Zm2 9h8v1H8v-1Z"/>
+              </svg>
+            </div>
+            <h3>Frontend Development</h3>
+            <p>Responsive websites built with HTML, CSS &amp; JavaScript.</p>
+          </article>
+
+          <article class="card pad lift reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2a7 7 0 0 1 7 7v2h2v2h-2v2a7 7 0 1 1-14 0v-2H3v-2h2V9a7 7 0 0 1 7-7Zm5 9V9a5 5 0 0 0-10 0v2h10Zm0 4v-2H7v2a5 5 0 0 0 10 0Z"/>
+              </svg>
+            </div>
+            <h3>Freelance Consulting</h3>
+            <p>Helping clients bring their digital ideas to life.</p>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© <span id="year"></span> Yatin Ramjat Prabhu. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
