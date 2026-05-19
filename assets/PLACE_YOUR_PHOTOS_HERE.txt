@@ -1,7 +1,6 @@
 Add your images in this folder:
 
-- unnamed.jpg  (used on `index.html`)
-- about-photo.jpg (used on `about.html`)
+- unnamed.jpg  (used on `index.html` and `about.html`)
 
 Tip: Use square-ish images for best results in the circle.
 
